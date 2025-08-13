@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta> charset="UFT-8">
+        <title>My portfolio</title>
+        </head>
+        <body>
+            <header>
+                <h1>Alhaji Ynb</h1>
+                <p>/Electrical Engineer & Web Developer</p>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="projects.html">projects</a>
+                    <a href="contact.html">Contact</a>
+                    <nav>
+                </header>
+
+                <main>
+                    <section> id="hero">
+                        <h2>Welcome to my portfolio!</h2> my name is JIMOH RASHEED AYODEJI <br> i am an Electrical Engineer, a footballer and Web Developer <br>
+                        <button>Get in Touch</button>
+                        </section>
+
+                        <section id="skills">
+                            <h2>My Skills</h2>
+                            <h2>Electrical Engineering</h2> iam a full time Electrical Engineer and ive been at it for over a long period of time. i deal with all kind of house wiring and i aslo install solar inverters too.
+                            below is my expertise level in Electrical Engineering field
+                            <progress>value="90" max="100"</progress><br>
+                            </section>
+
+                            <section> id="testimonies">
+                                <h2>Testimonies</h2>
+                                <blockquote>"Alhaji is a talented and reliable engineer! - A happy client"</blockquote>
+                                </section>
+
+                                <section> id="latest-posts">
+                                    <h2>Latest Blog Post</h2>
+                                    <a href="blog/post1.html/"></a>
+                                    </section>
+                </main>
+                <footer>
+                    <p> 2025 Alhaji Ynb</p>
+                <footer>
+                </body>
+        </html>   
+        
+        
+
+        <header><h1>About Me</h1></header>
+        <main>
+            <section id="timeline">
+                <h2> Career Timeline</h2>
+                <ul>
+                    <li>2020: Started Electrical Engineering</li>
+                    <li>2025: Learned Web Development</li>
+                    <li>2025: Built First Portfolio</li>
+                </ul>
+                </section>
+                <section> id="interests">
+                    <h2>Interests</h2>
+                    <p>🏕 Camping | 🎱 Bowling | 🏁 NASCAR | 💻 Coding</p>
+    </section>
+
+    </section>
+    <a href="assests/resume.pdf" download>Download My Resume</a>
+    </section>
+</main>
+</body>
+</html>
+
+<h1>Projects</h1>
+<section> class="project-grid">
+    <article>
+        <img src="assets/images/project1.png" alt="Project 1">
+        <p><span><HTML</p>
+        <a href="#" target="_blank">View Project</a>
+    </article>
+    </section>
+</body>
+</html>
+
+
+<body>
+    <h1> Contact Me</h1>
+    
+</body>                    
