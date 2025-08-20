@@ -1,0 +1,101 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: mediumturquoise;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 900px;
+}
+.contact-box {
+    background: white;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba (0, 0, 0, 0.1);
+    overflow: hidden;
+}
+/* Left Side */
+.left {
+    flex: 1;
+    padding: 30px;
+    background: white;
+    border-right: 1px solid whitesmoke;
+    text-align: center;
+}
+.left .info {
+    margin-bottom: 25px;
+}
+.left .info h3 {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.left .info p {
+    font-size: 14px;
+    color: darkolivegreen;
+}
+.icon {
+    font-size: 22px;
+    color: navy;
+    margin-right: 10px;
+}
+/* Right Side */
+.right {
+    flex: 2;
+    padding: 30px;
+}
+.right h2 {
+    color: rebeccapurple;
+    margin-bottom: 10px;
+}
+.right p {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 20px;
+}
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    background: whitesmoke;
+    border-radius: 6px;
+    font-size: 14px;
+}
+form textarea {
+    resize: none;
+    height: 100px;
+}
+button {
+    background: navy;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3 ease;
+}
+button:hover {
+    background: navy;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-box{
+        flex-direction: column;
+    }
+    .left {
+        border-right: none;
+        border-bottom: 1px solid whitesmoke;
+    }
+}
