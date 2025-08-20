@@ -1,0 +1,216 @@
+*{ box-sizing: border-box; }
+
+html, body{
+    height: 100%;
+}
+body{
+    margin: 0;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: white;
+    color: black;
+    line-height: 1.4;
+}
+
+/* Layout */
+.shell{
+    min-height: calc(100vh - 200px);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+/* Two-column on wider screens */
+@media (min-width: 900px){
+    .shell{
+    grid-template-columns: 1.1fr 1fr;
+    padding: 4rem 2rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    }
+}
+
+/* Brand side */
+.brand{
+    text-align: center;
+    max-width: 460px;
+}
+@media (min-width: 900px){
+    .brand{
+        text-align: left;
+        justify-self: start;
+    }
+}
+
+.logo{
+    margin: 0 0 .25rem;
+    font-size: clamp(2.1rem, 5vw, 3.5rem);
+    font-weight: 800;
+    letter-spacing: -.02em;
+    color: blue;
+    font-family: inherit;
+}
+
+.tagline{
+    margin: 0;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    color: black;
+}
+
+/*  Card */
+.card{
+    width: 100%;
+    max-width: 395px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+    padding: 1rem;
+}
+
+.login-form{
+    display: grid;
+    gap: .75rem;
+}
+
+.field{
+    display: grid;
+    gap: .65rem;
+}
+
+.field label{
+    font-size: .875rem;
+    color: var(--muted);
+}
+
+.field input{
+    width: 100%;
+    height: 50px;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 1rem;
+    background: whitesmoke;
+    color: black;
+    outline: none;
+}
+
+.field input:focus{
+    border-color: var(--focus);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--focus) 20%, transparent);
+}
+
+/* Buttons */
+.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    width: 100%;
+    height: 50px;
+    border: 0;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: transform .02s ease, filter .15s ease;
+    text-decoration: none;
+}
+.btn:active{ transform: translateY(1px); }
+
+.btn-primary{
+    background: blue;
+    color: whitesmoke;
+    border-radius: 6px;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 800;
+    box-shadow: none;
+    border: none;
+}
+
+.btn-primary:hover{ filter: brightness(.98); }
+.btn-primary:focus{ outline: 3px solid color-mix(in srgb, var(--blue) 30%, transparent); }
+
+.btn-secondary{
+    background: greenyellow;
+    color: white;
+    font-size: 1rem;
+    height: 48px;
+    width: max(60%, 230px);
+    margin: 0 auto 0;
+}
+.btn-secondary:hover{ background: greenyellow; }
+.btn-secondary:focus{ outline: 3px solid color-mix(insrgb, var(--green) 30%, transparent); }
+
+.btn-ghost{
+    background: greenyellow;
+    border-radius: 4px;
+    padding: .25rem .5rem;
+    height: auto;
+    width: auto;
+    font-weight: 600;
+}
+
+/*  Links & helpers */
+.help{
+    text-align: center;
+    margin: .25rem 0 0;
+}
+.link{
+    color: var(--blue);
+    text-decoration: none;
+}
+.link:hover{ text-decoration: underline; }
+
+.divider{
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: .75rem 0;
+}
+
+.create-page{
+    text-align: center;
+    font-size: .95rem;
+    color: var(--muted);
+    margin: 1rem 0 0;
+}
+.create-page .link{ font-weight: 600; }
+
+/* Footer */
+.footer{
+    padding: 2rem 1rem 3rem;
+    color: var(--muted);
+    font-size: .9rem;
+}
+
+.footer nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem 1rem;
+    
+}
+
+.footer a{
+    color: inherit;
+    text-decoration: none;
+}
+.footer a:hover{ text-decoration: underline; }
+
+.lang{
+    max-width: 1100px;
+    margin: 0 auto .750rem;
+}
+
+/* High-contrast mode support */
+@media (prefers-contrast: more){
+    .card{ box-shadow: 0 0 0 2px var(--border); }
+    .btn-primary:focus,
+    .btn-secondary:focus{
+        outline-width: 4px;
+    }
+}
