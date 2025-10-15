@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 2;
+    background: whitesmoke;
+    color: blue;
+}
+
+nav {
+    background: brown;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
